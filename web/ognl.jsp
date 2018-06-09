@@ -12,6 +12,8 @@
 </head>
 <body>
 <h1>OGNL教学</h1>
+<p>OGIN(Object-Graph Navigation Language,对象导航语言)是一种功能强大的表达式(Expression Language,EL).通过OGNL,
+    可以使用简单一致的表达式语法存取对象的任意属性,调用对象的方法,遍历整个元素</p>
 <p>OGNL表达式优势</p>
 <ul>
     <li>(1)OGNL可使类型转换变得更简单</li>
@@ -22,25 +24,7 @@
     <li>可以方便地访问OGNL上下文(OGNL context)和ActionContext.</li>
     <li>可以方便的操作集合对象</li>
 </ul>
-<p>OGNL常用的三大符号</p>
-<p>"#"号</p>
-<ul>
-    <li>访问OGNL上下文和Action上下文,相当于ActionContext.getContext(),下表列出了ActionContext中一些常用属性</li>
-    <table>
-        <tr>
-            <td>属性名称</td>
-            <td>属性作用</td>
-            <td>应用说明</td>
-        </tr>
-        <tr>
-            <td>parameters</td>
-            <td>包含当前HTTP请求参数的Map</td>
-            <td>#parameters.id[0]相当于request.getParameter("id")</td>
-        </tr>
-        <tr>
-            <td></td>
-        </tr>
-    </table>
-</ul>
+<a href="sign.jsp">OGNL三大符号讲解</a>
+<p>在配置文件中使用OGNL表达式,一般是指定的URL路径中需要带有参数,参数值可以使用OGNL表达式实现</p>
 </body>
 </html>
