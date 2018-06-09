@@ -11,6 +11,7 @@
     <title>ognl教学</title>
 </head>
 <body>
+<h1>OGNL教学</h1>
 <p>OGNL表达式优势</p>
 <ul>
     <li>(1)OGNL可使类型转换变得更简单</li>
@@ -23,5 +24,23 @@
 </ul>
 <p>OGNL常用的三大符号</p>
 <p>"#"号</p>
+<ul>
+    <li>访问OGNL上下文和Action上下文,相当于ActionContext.getContext(),下表列出了ActionContext中一些常用属性</li>
+    <table>
+        <tr>
+            <td>属性名称</td>
+            <td>属性作用</td>
+            <td>应用说明</td>
+        </tr>
+        <tr>
+            <td>parameters</td>
+            <td>包含当前HTTP请求参数的Map</td>
+            <td>#parameters.id[0]相当于request.getParameter("id")</td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+</ul>
 </body>
 </html>
